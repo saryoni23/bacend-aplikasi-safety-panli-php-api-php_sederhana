@@ -8,7 +8,7 @@
                         <div class="panel-heading">
                         <div class="pull-right">
                             <a href="" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-refresh"></i></a>
-                            <a href="download.php" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-print">Download Data</i></a>
+                            <a href="LISTRIK/excel.php" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-print">Download Data</i></a>
                         </div>
                             <div style="margin-button: 20px">
                                 <form class="form-inline" action="" metthod="post">

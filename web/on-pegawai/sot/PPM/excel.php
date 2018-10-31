@@ -1,6 +1,6 @@
 <?php
 header("Content-type: application/vnd-ms-excel");
-header("Content-Disposition: attachment; filename=Data Incident.xls");
+header("Content-Disposition: attachment; filename=DATA PENANGANAN & PENYIMPANAN MATERIAL.xls");
 ?>
 
 <!DOCTYPE html>
@@ -9,14 +9,15 @@ header("Content-Disposition: attachment; filename=Data Incident.xls");
 <table border="1" id="coba1">
 	<thead>
     <tr>
-	    <th class="column1">NO</th>
-    	<th class="column1">TIME</th>
-    	<th class="column1">DATE</th>
-    	<th class="column1">PICTURE</th>
-    	<th class="column1">CATEGORY</th>
-    	<th class="column1">AREA</th>
-    	<th class="column1">DUE DATE</th>
-    	<th class="column1">STATUS</th>
+        <th>NO</th>
+        <th>TIME</th>
+        <th>DATE</th>
+        <th>MATERIAL DISUSUN DENGAN RAPI DAN CARA AMAN</th>
+        <th>OPERATOR MENGANGKAT MATERIAL DENGAN CARA YANG AMAN DAN BENAR</th>
+        <th>FORKLIFT / STACKER / PALLET JACK DALAM KONDISI YANG BAGUS? (REM, RODA, KLAKSON, PEMELIHARAAN, SWL)</th>
+        <th>FORKLIFT / STACKER / PALLET TRUCK DIKEMUDIKAN OLEH ORANG TERLATIH DAN DENGAN CARA YANG AMAN</th>
+        <th>RACKING TIDAK RUSAK</th>
+        <th>PALLET DALAM KONDISI YANG BAGUS</th>
     </tr>
     </thead>
 	<?php
@@ -45,14 +46,14 @@ header("Content-Disposition: attachment; filename=Data Incident.xls");
 	echo '
 		<tr>
 			<td>'.$no.'</td>
-            <td>'.$data['time_uc'].'</td>
-            <td>'.$data['date_uc'].'</td>
-            <td><img src='.$data['image_uc'].' height="100px" width="100px;"></td>
-            <td>'.$data['category_uc'].'</td>
-            <td>'.$data['area_uc'].'</td>
-            <td>'.$data['due_date'].'</td>
-            <td>'.$data['status_uc'].'</td>
-            <td>	 
+            <td>'.$data['time_ppm'].'</td>
+            <td>'.$data['date_ppm'].'</td>
+            <td>area:'.$data['area_ppm1'].'<br>hasil:'.$data['hasil_ppm1'].'<br>deskripsi:'.$data['desk_ppm1'].'</td>
+            <td>area:'.$data['area_ppm2'].'<br>hasil:'.$data['hasil_ppm2'].'<br>deskripsi:'.$data['desk_ppm2'].'</td>
+            <td>area:'.$data['area_ppm3'].'<br>hasil:'.$data['hasil_ppm3'].'<br>deskripsi:'.$data['desk_ppm3'].'</td>
+            <td>area:'.$data['area_ppm4'].'<br>hasil:'.$data['hasil_ppm4'].'<br>deskripsi:'.$data['desk_ppm4'].'</td>
+            <td>area:'.$data['area_ppm5'].'<br>hasil:'.$data['hasil_ppm5'].'<br>deskripsi:'.$data['desk_ppm5'].'</td>
+            <td>area:'.$data['area_ppm6'].'<br>hasil:'.$data['hasil_ppm6'].'<br>deskripsi:'.$data['desk_ppm6'].'</td>	 
 		</tr>
 		';
 		$no++;
@@ -60,5 +61,5 @@ header("Content-Disposition: attachment; filename=Data Incident.xls");
 	?>
 </table>		
 <?php
-echo "<script>window.location='data.php';</script>";
+echo "<script>window.location='../data.php';</script>";
 ?>

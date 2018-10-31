@@ -1,6 +1,6 @@
 <?php
 header("Content-type: application/vnd-ms-excel");
-header("Content-Disposition: attachment; filename=Data Bahan Kimia.xls");
+header("Content-Disposition: attachment; filename=DATA BAHAN KIMIA.xls");
 ?>
 
 <!DOCTYPE html>

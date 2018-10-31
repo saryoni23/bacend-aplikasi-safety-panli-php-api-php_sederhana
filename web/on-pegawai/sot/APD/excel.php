@@ -1,6 +1,6 @@
 <?php
 header("Content-type: application/vnd-ms-excel");
-header("Content-Disposition: attachment; filename=Data Apd.xls");
+header("Content-Disposition: attachment; filename=DATA ALAT PELINDUNG DIRI.xls");
 ?>
 
 <!DOCTYPE html>

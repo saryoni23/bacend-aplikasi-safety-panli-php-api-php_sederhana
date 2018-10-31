@@ -1,6 +1,6 @@
 <?php
 header("Content-type: application/vnd-ms-excel");
-header("Content-Disposition: attachment; filename=Data Incident.xls");
+header("Content-Disposition: attachment; filename=DATA TABEL PERTOLONGAN PERTAMA.xls");
 ?>
 
 <!DOCTYPE html>
@@ -9,14 +9,13 @@ header("Content-Disposition: attachment; filename=Data Incident.xls");
 <table border="1" id="coba1">
 	<thead>
     <tr>
-	    <th class="column1">NO</th>
-    	<th class="column1">TIME</th>
-    	<th class="column1">DATE</th>
-    	<th class="column1">PICTURE</th>
-    	<th class="column1">CATEGORY</th>
-    	<th class="column1">AREA</th>
-    	<th class="column1">DUE DATE</th>
-    	<th class="column1">STATUS</th>
+        <th>NO</th>
+        <th>TIME</th>
+        <th>DATE</th>
+        <th>KOTAK P3K DISEDIAKAN DAN MEMADAI</th>
+        <th>PETUGAS P3K TERSEDIA</th>
+        <th>SEMUA ALAT P3K YANG DIWAJIBKAN ADA</th>
+
     </tr>
     </thead>
 	<?php
@@ -39,7 +38,7 @@ header("Content-Disposition: attachment; filename=Data Incident.xls");
         die('Database Not Connect. Error : ' . $dbconnect->connect_error);
     }
 	//query menampilkan data
-    $sql = mysqli_query($dbconnect, "SELECT * from tb_unsafecondition");
+    $sql = mysqli_query($dbconnect, "SELECT * from tb_pp");
     $no = 1;
     foreach ($sql as $data){
 	echo '
@@ -47,12 +46,9 @@ header("Content-Disposition: attachment; filename=Data Incident.xls");
 			<td>'.$no.'</td>
             <td>'.$data['time_uc'].'</td>
             <td>'.$data['date_uc'].'</td>
-            <td><img src='.$data['image_uc'].' height="100px" width="100px;"></td>
-            <td>'.$data['category_uc'].'</td>
-            <td>'.$data['area_uc'].'</td>
-            <td>'.$data['due_date'].'</td>
-            <td>'.$data['status_uc'].'</td>
-            <td>	 
+            <td>area:'.$data['area_pp1'].'<br>hasil:'.$data['hasil_pp1'].'<br>deskripsi:'.$data['desk_pp1'].'</td>
+            <td>area:'.$data['area_pp2'].'<br>hasil:'.$data['hasil_pp2'].'<br>deskripsi:'.$data['desk_pp2'].'</td>
+            <td>area:'.$data['area_pp3'].'<br>hasil:'.$data['hasil_pp3'].'<br>deskripsi:'.$data['desk_pp3'].'</td>
 		</tr>
 		';
 		$no++;
@@ -60,5 +56,5 @@ header("Content-Disposition: attachment; filename=Data Incident.xls");
 	?>
 </table>		
 <?php
-echo "<script>window.location='data.php';</script>";
+echo "<script>window.location='../data.php';</script>";
 ?>
