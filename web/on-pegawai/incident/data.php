@@ -15,7 +15,8 @@
                     INCIDENT
                     <div class="pull-right">
                         <a href="" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-refresh"></i></a>
-                        <a href="excel.php" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-print">Download Data</i></a>
+                        <a href="excel.php" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-print">Download Data Excel</i></a>
+                        <a href="pdf.php" target="_BLANK" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-print">Download Data PDF</i></a>
                     </div>
                     <div style="margin-button: 20px">
                         <form class="form-inline" action="" metthod="post">

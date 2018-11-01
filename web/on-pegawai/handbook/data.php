@@ -14,7 +14,7 @@
                     <div class="panel-heading">
                     <div class="pull-right">
                         <a href="" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-refresh"></i></a>
-                        <a href="add.php" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-plus">Tambah Data</i></a>
+                        <!-- <a href="add.php" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-plus">Tambah Data</i></a> -->
                     </div>
                     <div style="margin-button: 20px">
                         <form class="form-inline" action="" metthod="post">
@@ -69,7 +69,7 @@
                                                 <td><?=$data['name']?></td>
                                                 <td><a href="<?=$data['url']?>" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download"></i></a></td>
                                                 <td>
-                                                <a href="edit.php?id=<?=$data['id_hb']?>" class="btn btn-warning btn-xs"><i class="glyphicon glyphicon-edit"></i></a>
+                                                <!-- <a href="edit.php?id=<?=$data['id_hb']?>" class="btn btn-warning btn-xs"><i class="glyphicon glyphicon-edit"></i></a> -->
                                                 <a href="del.php?id=<?=$data['id_hb']?>" onclick="return confirm('Apakah anda yakin menghapus data ?')" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></a>
                                                 </td>
                                             </tr>

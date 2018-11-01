@@ -36,7 +36,7 @@ if (!isset($_SESSION['nama'])){
                             <li><a href="<?=base_url('on-Pegawai')?>">Dashboard</a></li>
                             <li><a href="<?=base_url('on-Pegawai/sot')?>">SOT</a></li>
                             <li><a href="<?=base_url('on-Pegawai/incident')?>">Incident</a></li>
-                            <li><a href="<?=base_url('on-Pegawai/uc')?>">Unsafe Confition</a></li>
+                            <li><a href="<?=base_url('on-Pegawai/uc')?>">Unsafe Condition</a></li>
                             <li><a href="<?=base_url('on-Pegawai/handbook')?>">Hand Book</a></li>
                             <li><a href="<?=base_url('auth/logout.php')?>">Logout</a></li>
 
