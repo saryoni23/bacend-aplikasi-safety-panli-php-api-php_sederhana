@@ -22,12 +22,14 @@
     	<th class="column1">STATUS</th>
     </tr>
     </thead>
+
 	<?php
-	//koneksi ke database
+    // require_once "config.php";
+	// //koneksi ke database
     define('DBHOST', 'localhost');
     define('DBUSER', 'root');
     define('DBPASS', '');
-    define('DBNAME', 'u442702252_safe1');
+    define('DBNAME', 'db_safetypanli');
     
     /**
      * $dbconnect : koneksi kedatabase
@@ -39,8 +41,11 @@
      * jika terdapat error maka die() // stop dan tampilkan error
      */
     if ($dbconnect->connect_error) {
-        die('Database Not Connect. Error : ' . $dbconnect->connect_error);
-    }
+            die('Database Not Connect. Error : ' . $dbconnect->connect_error);
+        }
+        
+    ?>
+<?php
 	//query menampilkan data
     $sql = mysqli_query($dbconnect, "SELECT * from tb_unsafecondition");
     $no = 1;

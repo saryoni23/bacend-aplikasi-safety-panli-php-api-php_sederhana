@@ -38,8 +38,8 @@ if (!isset($_SESSION['nama'])){
                             <li><a href="<?=base_url('on-Pegawai/incident')?>">SOT</a></li>
                             <li><a href="<?=base_url('on-Pegawai/incident')?>">Incident</a></li>
                             <li><a href="<?=base_url('on-Pegawai/incident')?>">Unsafe Confition</a></li>
-                             <li><a href="<?=base_url('on-Pegawai/incident')?>">Hand Book</a></li>
-                            <li><a href="<?=base_url('auth/logout.php')?>">Logout</a></li>
+                            <li><a href="<?=base_url('on-Pegawai/incident')?>">Hand Book</a></li>
+                            <li><a href="<?=base_url('/auth/logout.php')?>">Logout</a></li>
 
                         </ul>
                     </div>

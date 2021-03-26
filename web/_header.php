@@ -47,8 +47,6 @@ if (!isset($_SESSION['nama'])){
             </div>
         </div>
     </div>
-   
-   
 
 <?php
 }

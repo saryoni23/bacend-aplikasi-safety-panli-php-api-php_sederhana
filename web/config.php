@@ -3,7 +3,7 @@
 define('DBHOST', 'localhost');
 define('DBUSER', 'root');
 define('DBPASS', '');
-define('DBNAME', 'u442702252_safe1');
+define('DBNAME', 'db_safetypanli');
 
 /**
  * $dbconnect : koneksi kedatabase

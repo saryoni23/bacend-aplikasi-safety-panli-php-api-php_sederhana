@@ -5,14 +5,14 @@ require 'config.php';
 if ( isset($_POST['username']) && isset($_POST['password']) ) {
     
     $sql_check = "SELECT nama, 
-                         level, 
-                         id_user 
-                  FROM tb_user 
-                  WHERE 
-                       username=? 
-                       AND 
-                       password=? 
-                  LIMIT 1";
+                        level, 
+                        id_user 
+                    FROM tb_user 
+                    WHERE 
+                        username=? 
+                        AND 
+                        password=? 
+                    LIMIT 1";
 
     $check_log = $dbconnect->prepare($sql_check);
     $check_log->bind_param('ss', $username, $password);
@@ -46,6 +46,6 @@ if ( isset($_POST['username']) && isset($_POST['password']) ) {
 
    
 } else {
-    header('location:../index.php');
+    header('location:../../index.php');
     exit();
 }

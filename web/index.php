@@ -24,7 +24,7 @@ if (isset($_SESSION['nama'])){
     <div class="wrapper">
         <div class="container">
             <center>
-            <img src=_assets/img/logo_panli.png height="100%" width="100%;">
+            <img src=web/_assets/img/logo_panli.png height="100%" width="100%;">
                 <div align="center" style="margin-top: 20px">              
                 <?php
                 /* handle error */
@@ -37,7 +37,7 @@ if (isset($_SESSION['nama'])){
                     </div>
                     
                 <?php endif;?>
-                    <form action="auth/chek_login.php" method="post" class="navbar-form" >
+                    <form action="web/auth/chek_login.php" method="post" class="navbar-form" >
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input type="text" name="user" class="form-control" placeholder="Username" required>
