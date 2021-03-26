@@ -19,9 +19,7 @@
                     </div>
                     <div style="margin-button: 20px">
                         <form class="form-inline" action="" metthod="post">
- 
-                            <div class="form-group">
-                               
+                            <div class="form-group">                           
                         </form>
                     </div>
                     </div>

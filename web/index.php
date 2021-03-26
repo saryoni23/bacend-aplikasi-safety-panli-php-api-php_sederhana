@@ -25,7 +25,9 @@ if (isset($_SESSION['nama'])){
         <div class="container">
             <center>
             <img src=web/_assets/img/logo_panli.png height="100%" width="100%;">
-                <div align="center" style="margin-top: 20px">              
+                <div align="center" style="margin-top: 20px">    
+                <h1>SELAMAT DATANG</h1>      
+                <hr>    
                 <?php
                 /* handle error */
                 if (isset($_GET['error'])) : ?>

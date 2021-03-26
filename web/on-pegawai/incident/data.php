@@ -105,8 +105,7 @@
                                     $jml = mysqli_num_rows(mysqli_query($con, $queryjml));
                                     echo "Jumlah Data : <b>$jml</b>";
                                     ?>
-                                    </div>
-                                  
+                                    </div>         
                                     <?php
                                 }else{ 
                                     echo "<div style=\"float;left;\">";
